@@ -30,7 +30,7 @@ repositories {
 }
 
 dependencies {
-    compile 'mobi.upod:time-duration-picker:1.1.3'
+    compile 'tech.olbri.android:time-duration-picker:1.1.3'
 }
 ```
 
@@ -44,7 +44,7 @@ To use the standalone component, simply reference it in your layout. For example
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <mobi.upod.timedurationpicker.TimeDurationPicker
+    <tech.olbri.android.timedurationpicker.TimeDurationPicker
         android:id="@+id/timeDurationInput"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -75,8 +75,8 @@ Fortunately TimeDurationPicker library already provides a matching base class fo
 
 From the sample application:
 ```java
-import mobi.upod.timedurationpicker.TimeDurationPickerDialogFragment;
-import mobi.upod.timedurationpicker.TimeDurationPicker;
+import tech.olbri.android.timedurationpicker.TimeDurationPickerDialogFragment;
+import tech.olbri.android.timedurationpicker.TimeDurationPicker;
 
 public class PickerDialogFragment extends TimeDurationPickerDialogFragment {
 
@@ -109,7 +109,7 @@ Want a duration preference that holds a user selected value in milliseconds? Sim
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <mobi.upod.timedurationpicker.TimeDurationPickerPreference
+    <tech.olbri.android.timedurationpicker.TimeDurationPickerPreference
         android:key="pref_duration"
         android:title="Reminder"
         android:summary="Remind me in ${m:ss} minute(s)."
@@ -139,7 +139,7 @@ They can be set directly within the layout file like this:
              android:layout_width="match_parent"
              android:layout_height="match_parent">
 
-    <mobi.upod.timedurationpicker.TimeDurationPicker
+    <tech.olbri.android.timedurationpicker.TimeDurationPicker
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:textAppearanceDisplay="@style/TextAppearance.TimeDurationPicker.Display.Large"
